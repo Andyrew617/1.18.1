@@ -1,5 +1,7 @@
 package net.andyrew.learningtomod;
 
+import net.andyrew.learningtomod.block.ModBlocks;
+import net.andyrew.learningtomod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +21,9 @@ public class LearningToMod {
 
     public LearningToMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
