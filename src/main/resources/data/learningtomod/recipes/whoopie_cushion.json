@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "minecraft:ink_sac"},
+    {"item": "minecraft:pink_carpet"},
+    {"item": "minecraft:pink_carpet"},
+    {"item": "minecraft:pink_carpet"}
+  ],
+  "result": {
+    "item": "learningtomod:whoopie_cushion"
+  }
+}
